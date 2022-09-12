@@ -42,12 +42,14 @@ function validate() {
       document.getElementById("agee").innerHTML = msg3;
     }
   }
- if(ag>20){
-  document.getElementById("agee").innerHTML =msg4;
-
- }
- if(ag<5){
-  document.getElementById("agee").innerHTML =msg4;
-  
- }
+  if (ag > 20) {
+    document.getElementById("agee").innerHTML = msg4;
+  }
+  if (ag < 5) {
+    document.getElementById("agee").innerHTML = msg4;
+  }
+  if(typeof(ag )==String){
+    document.getElementById("agee").innerHTML = msg4;
+  }
+  console.log(typeof(ag))
 }
